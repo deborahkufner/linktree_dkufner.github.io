@@ -1,0 +1,80 @@
+*{ /* RESET -- isso serve para app essas config em todo meu site*/
+    margin: 0;
+    padding: 0;
+}
+
+
+
+html, body{ /*isso para informar que eu quero que o body e o html ocupem toda minha pagina, 100% dela*/
+    height: 100%;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    background: rgb(54,77,204);
+    background: linear-gradient(180deg, rgba(54,77,204,1) 0%, rgba(19,35,124,1) 100%); /*esses valores eu consegui no site css gradient, copiei de lá */
+}
+
+.avatar{
+    width: 80px;
+    border-radius: 50px; /*imagem redonda*/
+    border: 3px solid white;
+    box-shadow: 0 0 20px white; /*aqui o 20px eh o espalhamento da sombra*/
+}
+
+h1{
+    font-family: 'Architects Daughter', cursive;
+    font-weight: 100;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+h2{
+    font-size: 16px;
+}
+
+.profile{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social{
+    display: flex; /*FLEXBOX - quando tenho um PAI e comolo flex, todos os elementos filhos dele serao dispostos lado a lado. O flex é disposto no CSS*/
+    justify-content: space-around; /* so funciona no flex. Coloca espacoao redor das imagens e nao eh necess colocar margin por ex, porque nao ia dar certo, nao ficaria centralizado*/
+    margin: 20px;
+    list-style: none;
+}
+
+.social img{
+    width: 33px;
+    height: auto;
+}
+
+.links-list{
+   list-style: none;
+}
+
+.links-list li{
+    margin: 10px 20px;
+}
+
+.links-list li a{
+    display: block; /*aqui pra criar blocos - tem um comportamento parecido com a DIV porque a div é um bloco*/
+    list-style: none;
+    background-color: white;
+    padding: 15px 20px;
+    border-bottom: 4px;
+    text-decoration: none;
+    border-radius: 4px;
+    color: rgb (54,77,204);
+    font-weight: bold;
+}
+
+.links-list li a span{
+    color: gray;
+    display: block; /*eu preciso colocar display block porque esse elemento é inline, ele fica disposto lado a lado, e agora ele pode ficar isolado abaixo. eu nao consigo colocar margem a nao ser q transforme ele em block*/
+    margin-top: 10px;
+} 
+
+
